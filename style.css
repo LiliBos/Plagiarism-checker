@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 60px;
+    background: linear-gradient(to bottom, #BC56EC, #A41BE5);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 20px;
+}
+
+.logo {
+    height: 45px; 
+    margin-right: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 34px; 
+    font-weight: bold; 
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center; /* Center content horizontally */
+}
+
+h1 {
+    font-size: 42px;
+    color: #A41BE5;
+    text-align: center; 
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    resize: none; 
+}
+
+button, input[type="file"]::file-selector-button {
+    margin-top: 20px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    display: inline-block; 
+    text-align: center; 
+    text-decoration: none; 
+    background:  #A41BE5;
+    color: white;
+}
+
+button:hover, input[type="file"]::file-selector-button:hover {
+    background: #BC56EC;
+    opacity: 0.8;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#plagiarismPercentage {
+    font-weight: bold;
+    color: #A41BE5;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 1284px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .container {
+        max-width: 290px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center; /* Center content horizontally */
+    }
+
+    button, input[type="file"]::file-selector-button {
+        padding: 10px 20px;
+    }
+   
+    textarea {
+       height: 350px;
+       
+    }
+    h1 {
+        font-size: 36px;
+        color: #A41BE5;
+        text-align: center; 
+    }
+}

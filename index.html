@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <title>Перевірка на плагіат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="plag.svg" alt="Logo" class="logo">
+        <span class="title">FindMe!</span>
+    </div>
+    <div class="container">
+        <h1>Перевірка на плагіат</h1>
+        <textarea id="inputText" placeholder="Введіть текст"></textarea>
+        <input type="file" id="fileInput" accept=".txt, .pdf, .doc, .docx">
+        <button id="checkButton">Перевірити</button>
+        
+        
+        <div id="result">
+            <p>Рівень плагіату: <span id="plagiarismPercentage">0%</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
